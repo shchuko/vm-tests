@@ -1,0 +1,8 @@
+[seqwrite]
+ioengine=posixaio
+blocksize=4k
+rw=write
+direct=1
+buffered=0
+size=1G
+iodepth=32

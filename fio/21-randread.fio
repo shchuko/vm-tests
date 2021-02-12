@@ -1,9 +1,7 @@
-[readtest]
+[randread]
+ioengine=posixaio
 blocksize=4k
-filename=./test-volume
 rw=randread
 direct=1
 buffered=0
-ioengine=libaio
 iodepth=32
-

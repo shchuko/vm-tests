@@ -1,0 +1,7 @@
+[randrw]
+ioengine=posixaio
+blocksize=4k
+rw=randrw
+direct=1
+buffered=0
+iodepth=32

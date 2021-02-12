@@ -1,0 +1,7 @@
+[seqread]
+ioengine=posixaio
+blocksize=4k
+rw=read
+direct=1
+buffered=0
+iodepth=32
