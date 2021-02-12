@@ -5,4 +5,5 @@ rw=randwrite
 direct=1
 buffered=0
 iodepth=32
-size=1G
+runtime=20
+size=2G

@@ -5,3 +5,5 @@ rw=randread
 direct=1
 buffered=0
 iodepth=32
+runtime=20
+size=2G

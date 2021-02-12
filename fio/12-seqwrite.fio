@@ -4,5 +4,6 @@ blocksize=4k
 rw=write
 direct=1
 buffered=0
-size=1G
+runtime=20
+size=2G
 iodepth=32
