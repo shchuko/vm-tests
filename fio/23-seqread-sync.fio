@@ -1,8 +1,0 @@
-[seqread-sync]
-ioengine=psync
-blocksize=4k
-rw=read
-direct=1
-buffered=0
-runtime=20
-size=2G
