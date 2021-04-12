@@ -1,11 +1,11 @@
 #!/bin/bash
 
 PORT="${PORT:-5201}"    # Optional
-IP="${IP:-}"            # Optional
+ADDRESS="${ADDRESS:-}"            # Optional
 
 IP_OPTION=""
-if [[ ! -z "$IP" ]]; then
-  IP_OPTION=("--bind" "$IP")
+if [[ ! -z "$ADDRESS" ]]; then
+  IP_OPTION=("--bind" "$ADDRESS")
 fi
 
 iperf3 --server --port "$PORT" "${IP_OPTION[@]}"
