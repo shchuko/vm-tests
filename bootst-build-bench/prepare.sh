@@ -30,20 +30,20 @@ if [[ -f bench.sh ]]; then
   rm bench.sh
 fi
 
-echo "#!/bin/bash
+echo '#!/bin/bash
 set -eu
 
+BOOST_DIR="$PWD/'"$DIR"'"
+
 cleanup() {
-  rm -rf bin.v2
+  rm -rf "$BOOST_DIR/bin.v2" "$BOOST_DIR/stage"
 }
 
 trap cleanup EXIT
 
-cd $DIR
-echo 'Boost-build benchmark is started...'
-time ./b2 1>/dev/null
-cd -
-" >bench.sh
+cd $BOOST_DIR
+echo "Boost-build benchmark is started..."
+time ./b2 1>/dev/null' >bench.sh
 chmod u+x bench.sh
 
 echo "Done!"
